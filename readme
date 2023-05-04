@@ -3,10 +3,11 @@
 # Amazon Linux 2023
 
 #!/bin/bash
+sudo su
 yum update -y
 yum install git -y
-git clone https://github.com/lowchoonkeat/aws-live.git
-cd aws-live
+git clone https://github.com/pangnelson/GiantMarket.git
+cd GiantMarket
 yum install python-pip -y
 pip3 install flask pymysql boto3
 python3 EmpApp.py
