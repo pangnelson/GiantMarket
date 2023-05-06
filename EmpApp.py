@@ -17,7 +17,7 @@ db_conn = connections.Connection(
 
 )
 output = {}
-table = 'Giant2'
+table = 'giantdb'
 
 
 @app.route("/", methods=['GET', 'POST'])
@@ -38,7 +38,7 @@ def AddEmp():
     uname = request.form['uname']
     address = request.form['address']
 
-    insert_sql = "INSERT INTO Giant2 VALUES (%s, %s, %s, %s, %s)"
+    insert_sql = "INSERT INTO giantdb VALUES (%s, %s, %s, %s, %s)"
     cursor = db_conn.cursor()
 
     try:
